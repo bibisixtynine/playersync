@@ -1,7 +1,7 @@
 import express from 'express';
 import http from 'http';
 import cors from 'cors';
-import  playersync  from 'playersync';
+import playersync  from 'playersync';
 
 const PORT = process.env.PORT || 3000;
 
@@ -12,7 +12,8 @@ const server = http.createServer(app);
 app.use(express.json());
 
 app.use(cors({
-  origin: 'http://localhost:3000',
+  origin: '*',
+  credentials: true,
   optionsSuccessStatus: 200 
 }));
 
