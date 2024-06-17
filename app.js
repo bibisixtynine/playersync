@@ -5,7 +5,7 @@ import playersync  from 'playersync';
 
 const PORT = process.env.PORT || 3000;
 
-console.log('💫🚀 Playersync-Server Starting ...')
+console.log('💫🚀 Playersync-Server V12 Starting ...')
 
 const app = express();
 const server = http.createServer(app);
