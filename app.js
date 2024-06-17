@@ -5,13 +5,14 @@ import  playersync  from 'playersync';
 
 const PORT = process.env.PORT || 3000;
 
+console.log('💫🚀 Playersync-Server Starting ...')
 
 const app = express();
 const server = http.createServer(app);
 app.use(express.json());
 
 app.use(cors({
-  origin: '*',
+  origin: 'http://localhost:3000',
   optionsSuccessStatus: 200 
 }));
 
@@ -19,4 +20,4 @@ playersync(app);
 
 server.listen(PORT);
 
-console.log('💫🚀 Playersync-Server Listening on: ' + PORT);
+console.log(' -> ✅ ePlayersync-Server Listening on: ' + PORT);
