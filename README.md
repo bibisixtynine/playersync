@@ -1,4 +1,4 @@
-# PlayerSync
+# PlayerSync Server
 
 This allows browsers to be connected to each other with Webrtc and doesn't require any websocket to work. The peering is implemented with an API. A player can create a room that other players can join. As soon as a player joins a room, he is automatically connected with the other players of this room.
 
@@ -9,36 +9,6 @@ Players are directly connected to each other using PlayerSyncClient
 Keep server architecture simple and avoid server load.
 Connection is established from browser to browser.
 
-## Setup
-```sh
-$ npm install playersync
-```
-
-## demo
-### replace the content of package.json by the content of package-dev.json
-### Start
-Open two terminals.
-Go to the example directory.
-Start Client :
-```sh
-$ npm run dev
-```
-Start Server :
-```sh
-$ npm start
-```
-
-### Use case
-
-Open a window 1 on http: // localhost: 3000 /
-Create a room 1.
-Open another window 2 on http: // localhost: 3000 /
-Join room 1.
-You can chat.
-Open another window 3 on http: // localhost: 3000 /
-Create a room 2.
-Leave the room of window 2 and go to room 2
-You can chat.
 
 ## Usage
 
