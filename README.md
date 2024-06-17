@@ -11,8 +11,34 @@ Connection is established from browser to browser.
 
 ## Setup
 ```sh
-$ npm install playersync -s
+$ npm install playersync
 ```
+
+## demo
+### replace the content of package.json by the content of package-dev.json
+### Start
+Open two terminals.
+Go to the example directory.
+Start Client :
+```sh
+$ npm run dev
+```
+Start Server :
+```sh
+$ npm start
+```
+
+### Use case
+
+Open a window 1 on http: // localhost: 3000 /
+Create a room 1.
+Open another window 2 on http: // localhost: 3000 /
+Join room 1.
+You can chat.
+Open another window 3 on http: // localhost: 3000 /
+Create a room 2.
+Leave the room of window 2 and go to room 2
+You can chat.
 
 ## Usage
 
@@ -193,3 +219,5 @@ Add API To allow PlayerSyncClient to work.
 Duration param configure the server to delete inactive rooms after the specified time, if the server has not been informed of the departure of all the room players.
 The deleted rooms are not longer accessible. But player already connected can continue to communicate.
 If your application is on multiple servers, you can use redis to synchronize the API.
+
+

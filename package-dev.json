@@ -5,12 +5,13 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "start": "nodemon server/app.js"
+    "start": "node server/app.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",
-    "peerjs": "^1.3.2"
+    "peerjs": "^1.3.2",
+    "playersync": "^1.0.8"
   },
   "devDependencies": {
     "vite": "^2.6.14"
